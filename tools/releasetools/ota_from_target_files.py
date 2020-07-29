@@ -929,9 +929,9 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   
 
   script.Print("_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
-  script.Print("                𝓝𝓐𝓡𝓥𝓘𝓢-𝓞𝓢                   ");
-  script.Print("            𝓥𝓮𝓻𝓼𝓲𝓸𝓷 𝓜𝓐𝓡𝓚-10                ");
-  script.Print("        𝓔𝔁𝓹𝓮𝓬𝓽 𝓽𝓱𝓮 𝓾𝓷𝓮𝔁𝓹𝓮𝓬𝓽𝓮𝓭           ");
+  script.Print("                    NARVIS-OS                     ");
+  script.Print("                 Version Mark10                   ");
+  script.Print("             Expect The Unexpected                ");
   script.Print("_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
   
   if OPTIONS.wipe_user_data:
