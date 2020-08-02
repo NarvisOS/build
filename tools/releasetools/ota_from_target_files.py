@@ -1039,8 +1039,6 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     # be re-added.
     dynamic_partitions_diff = common.DynamicPartitionsDifference(
         info_dict=OPTIONS.info_dict,
-        block_diffs=block_diffs,
-        progress_dict=progress_dict)
         block_diffs=block_diff_dict.values(),
         progress_dict=progress_dict,
         build_without_vendor=(not HasVendorPartition(input_zip)))
@@ -1716,8 +1714,7 @@ else
 
   if OPTIONS.source_info_dict.get("use_dynamic_partitions") == "true":
     if OPTIONS.target_info_dict.get("use_dynamic_partitions") != "true":
-      raise RuntimeError(
-          "can't generate incremental that disables dynamic partitions")
+      raise RuntimeError("can't generate incremental that disables dynamic partitions")
     dynamic_partitions_diff = common.DynamicPartitionsDifference(
         info_dict=OPTIONS.target_info_dict,
         source_info_dict=OPTIONS.source_info_dict,
